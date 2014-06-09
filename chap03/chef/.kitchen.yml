@@ -1,0 +1,17 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: learningchef
+    driver:
+      box: learningchef/chefdk-box
+      box_url: learningchef/chefdk-box
+
+suites:
+  - name: default
+    run_list:
+    attributes:
