@@ -12,6 +12,8 @@ platforms:
       box_url: learningchef/chefdk-box
       synced_folders:
         - ["../..", "/learningchef"]
+      network:
+      - ["private_network", {ip: "33.33.33.10"}]
 
 suites:
   - name: default
