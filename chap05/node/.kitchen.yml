@@ -1,0 +1,20 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: centos65
+    driver:
+      provider: virtualbox
+      box: learningchef/centos65
+      box_url: learningchef/centos65
+      synced_folders:
+        - ["../..", "/learningchef"]
+
+suites:
+  - name: default
+    run_list:
+    attributes:
