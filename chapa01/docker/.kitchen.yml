@@ -1,0 +1,17 @@
+---
+driver:
+  name: docker
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: centos65
+    driver_config:
+      image: centos:latest
+      platform: centos
+
+suites:
+  - name: default
+    run_list:
+    attributes:
