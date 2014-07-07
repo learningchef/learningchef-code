@@ -1,0 +1,18 @@
+---
+driver:
+  name: ssh
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: centos65
+    driver:
+      hostname: 192.168.33.33
+      username: alice
+      password: averysecretpassword
+
+suites:
+  - name: default
+    run_list:
+    attributes:
