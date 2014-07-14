@@ -1,7 +1,7 @@
 DEPENDENCIES
-  motd
+  chef-server
     path: .
     metadata: true
 
 GRAPH
-  motd (0.1.0)
+  chef-server (0.1.0)

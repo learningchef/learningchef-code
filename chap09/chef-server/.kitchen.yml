@@ -4,6 +4,7 @@ driver:
 
 provisioner:
   name: chef_solo
+  require_chef_omnibus: true
 
 platforms:
   - name: centos65
@@ -11,9 +12,11 @@ platforms:
       provider: virtualbox
       box: learningchef/centos65
       box_url: learningchef/centos65
+      synced_folders:
+        - ["../..", "/learningchef"]
 
 suites:
   - name: default
     run_list:
-      - recipe[motd::default]
+      - recipe[chef-server::default]
     attributes:

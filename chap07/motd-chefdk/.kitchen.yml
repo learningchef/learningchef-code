@@ -15,5 +15,5 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[motd::default]
+      - recipe[motd-chefdk::default]
     attributes:
