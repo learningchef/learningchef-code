@@ -15,5 +15,5 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[motd-knife::default]
+      - recipe[motd::default]
     attributes:

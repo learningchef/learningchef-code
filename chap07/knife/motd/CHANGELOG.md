@@ -1,11 +1,11 @@
-motd-knife CHANGELOG
-====================
+motd CHANGELOG
+==============
 
-This file is used to list changes made in each version of the motd-knife cookbook.
+This file is used to list changes made in each version of the motd cookbook.
 
 0.1.0
 -----
-- [your_name] - Initial release of motd-knife
+- [your_name] - Initial release of motd
 
 - - -
 Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.

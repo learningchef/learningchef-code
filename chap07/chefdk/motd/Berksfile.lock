@@ -1,0 +1,7 @@
+DEPENDENCIES
+  motd
+    path: .
+    metadata: true
+
+GRAPH
+  motd (0.1.0)

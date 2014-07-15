@@ -10,10 +10,12 @@ platforms:
     driver:
       provider: virtualbox
       box: learningchef/centos65
-      box_url: learningchef/centos65
+      box_url: learningchef/centos65 
+      network:
+      - ["private_network", {ip: "192.168.33.33"}]
 
 suites:
   - name: default
     run_list:
-      - recipe[motd-chefdk::default]
+      - recipe[apache::default]
     attributes:

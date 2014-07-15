@@ -1,0 +1,7 @@
+DEPENDENCIES
+  apache
+    path: .
+    metadata: true
+
+GRAPH
+  apache (0.1.0)
