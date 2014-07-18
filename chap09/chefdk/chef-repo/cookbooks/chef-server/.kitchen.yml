@@ -4,7 +4,6 @@ driver:
 
 provisioner:
   name: chef_solo
-  require_chef_omnibus: true
 
 platforms:
   - name: centos65
@@ -12,8 +11,8 @@ platforms:
       provider: virtualbox
       box: learningchef/centos65
       box_url: learningchef/centos65
-      synced_folders:
-        - ["../..", "/learningchef"]
+      network:
+      - ["private_network", {ip: "192.168.33.34"}]
 
 suites:
   - name: default
