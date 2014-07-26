@@ -1,4 +1,4 @@
-# bar-cookbook
+# enterprise-chef
 
 TODO: Enter the cookbook description here.
 

@@ -1,12 +1,13 @@
-# Cookbook Name:: chef-server
+#
+# Cookbook Name:: enterprise-chef
 # Recipe:: default
 #
-# Copyright (C) 2014
+# Copyright (C) 2014 
 #
-#
+# 
 #
 
-package_url = node['chef-server']['url']
+package_url = node['enterprise-chef']['url']
 package_name = ::File.basename(package_url)
 package_local_path = "#{Chef::Config[:file_cache_path]}/#{package_name}"
 
@@ -23,6 +24,6 @@ end
 
 # reconfigure the installation
 execute 'reconfigure-chef-server' do
-  command 'chef-server-ctl reconfigure'
+  command 'private-chef-ctl reconfigure'
   action :nothing
 end
