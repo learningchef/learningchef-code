@@ -14,6 +14,5 @@ platforms:
       - ["private_network", {ip: "192.168.33.35"}]
 
 suites:
-  - name: default
-    run_list:
+  - name: node
     attributes:

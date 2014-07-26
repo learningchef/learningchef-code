@@ -1,7 +1,7 @@
 DEPENDENCIES
-  chef-server
+  enterprise-chef
     path: .
     metadata: true
 
 GRAPH
-  chef-server (0.1.0)
+  enterprise-chef (0.1.0)
