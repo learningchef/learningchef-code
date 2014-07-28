@@ -1,0 +1,23 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_solo
+  roles_path: ../../roles
+  cookbook_path: /Users/misheska/github/learningchef/learningchef-code/chap14/chefdk/chef-playground/cookbooks
+
+platforms:
+  - name: centos65
+    driver:
+      provider: virtualbox
+      box: learningchef/centos65
+      box_url: learningchef/centos65 
+      network:
+      - ["private_network", {ip: "192.168.33.33"}]
+
+suites:
+  - name: default
+    run_list:
+      - role[webserver]
+    attributes:
