@@ -4,7 +4,7 @@ driver:
 
 provisioner:
   name: chef_zero
-  data_bags_path: test/data_bags
+  data_bags_path: ../../data_bags
 
 platforms:
   - name: centos65
