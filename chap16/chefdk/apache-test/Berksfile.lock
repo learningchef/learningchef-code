@@ -1,0 +1,7 @@
+DEPENDENCIES
+  apache-test
+    path: .
+    metadata: true
+
+GRAPH
+  apache-test (0.1.0)
