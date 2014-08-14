@@ -12,7 +12,7 @@ platforms:
       box: learningchef/centos65
       box_url: learningchef/centos65
       synced_folders:
-        - ["../..", "/learningchef"]
+        - [".", "/learningchef"]
 
 suites:
   - name: default
