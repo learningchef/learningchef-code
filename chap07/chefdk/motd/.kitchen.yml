@@ -3,12 +3,11 @@ driver:
   name: vagrant
 
 provisioner:
-  name: chef_solo
+  name: chef_zero
 
 platforms:
-  - name: centos65
-    driver:
-      provider: virtualbox
+- name: centos65
+  driver:
       box: learningchef/centos65
       box_url: learningchef/centos65
 
