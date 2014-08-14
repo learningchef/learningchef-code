@@ -14,6 +14,6 @@ service "httpd" do
 end
 
 template "/var/www/html/index.html" do
-  source "index.html.erb"
-  mode "0644"
+  source 'index.html.erb'
+  mode '0644'
 end

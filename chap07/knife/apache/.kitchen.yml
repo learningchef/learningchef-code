@@ -8,11 +8,10 @@ provisioner:
 platforms:
   - name: centos65
     driver:
-      provider: virtualbox
       box: learningchef/centos65
       box_url: learningchef/centos65
       network:
-      - ["private_network", {ip: "192.168.33.33"}]
+      - ["private_network", {ip: "192.168.33.7"}]
 
 suites:
   - name: default
