@@ -1,0 +1,14 @@
+{
+  "name": "webserver",
+  "description": "Web Server",
+  "json_class": "Chef::Role",
+  "chef_type": "role",
+  "default_attributes": {
+    "apache": {
+      "port": 80
+    }
+  },
+  "run_list": [
+    "recipe[apache]"
+  ]
+}

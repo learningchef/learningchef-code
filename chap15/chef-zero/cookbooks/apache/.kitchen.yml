@@ -1,0 +1,37 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+  environments_path: ../../environments
+  roles_path: ../../.roles
+
+platforms:
+  - name: centos65
+    driver:
+      box: learningchef/centos65
+      box_url: learningchef/centos65
+
+suites:
+  - name: prod
+    provisioner:
+      client_rb:
+        environment: production
+    driver:
+      network:
+      - ["private_network", {ip: "192.168.33.15"}]
+    run_list:
+      - recipe[apache::default]
+    attributes:
+
+  - name: dev
+    provisioner:
+      client_rb:
+        environment: dev
+    driver:
+      network:
+      - ["private_network", {ip: "192.168.33.16"}]
+    run_list:
+      - recipe[apache::default]
+    attributes:

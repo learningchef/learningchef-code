@@ -1,0 +1,19 @@
+<% if @port != 80 -%>
+  Listen <%= @port %>
+<% end -%>
+
+<VirtualHost *:<%= @port %>>
+  ServerAdmin webmaster@localhost
+
+  DocumentRoot <%= @document_root %>
+  <Directory />
+    Options FollowSymLinks
+    AllowOverride None
+  </Directory>
+  <Directory <%= @document_root %>>
+    Options Indexes FollowSymLinks MultiViews
+    AllowOverride None
+    Order allow,deny
+    allow from all
+  </Directory>
+</VirtualHost>

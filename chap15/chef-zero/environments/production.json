@@ -1,0 +1,14 @@
+{
+  "name": "production",
+  "description": "For prods!",
+  "cookbook_versions": {
+    "apache": "= 0.1.0"
+  },
+  "json_class": "Chef::Environment",
+  "chef_type": "environment",
+  "override_attributes": {
+    "motd": {
+      "message": "A production-worthy message of the day"
+    }
+  }
+}
