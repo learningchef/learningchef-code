@@ -2,10 +2,7 @@
 # Cookbook Name:: apache-test
 # Recipe:: default
 #
-# Copyright (C) 2014 
-#
-# 
-#
+# Copyright (c) 2014 The Authors, All Rights Reserved.
 
 package "httpd"
 
