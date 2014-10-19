@@ -1,0 +1,22 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: centos65
+    driver:
+      box: learningchef/centos65
+      box_url: learningchef/centos65
+      network:
+      - ["private_network", {ip: "192.168.33.34"}]
+      customize:
+        memory: 1536
+
+suites:
+  - name: default
+    run_list:
+      - recipe[enterprise-chef::default]
+    attributes:
