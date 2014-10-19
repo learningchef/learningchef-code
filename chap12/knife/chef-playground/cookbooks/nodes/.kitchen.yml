@@ -1,0 +1,19 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+  nodes_path: ../../nodes
+
+platforms:
+  - name: centos65
+    driver:
+      box: learningchef/centos65
+      box_url: learningchef/centos65
+
+suites:
+  - name: default
+    run_list:
+      - recipe[nodes::default]
+    attributes:
