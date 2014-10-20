@@ -1,0 +1,12 @@
+<html>
+<body>
+<pre><code>
+This site was set up by <%= node['hostname'] %>
+My network addresses are:
+<% node['network']['interfaces'].keys.each do |iface_name| %>
+  * <%= iface_name %>:
+      <%= node['network']['interfaces'][iface_name]['addresses'].keys[1] %>
+<% end %>
+</code></pre>
+</body>
+</html>
