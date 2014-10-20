@@ -7,5 +7,5 @@
     "recipe[motd]",
     "recipe[users]",
     "recipe[apache]"
-  ]
+]
 }
