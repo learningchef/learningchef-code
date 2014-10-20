@@ -1,0 +1,18 @@
+{
+  "name": "snowman",
+  "chef_type": "node",
+  "json_class": "Chef::Node",
+  "chef_environment": "_default",
+  "run_list": ["recipe[apache]", "recipe[motd]", "recipe[motd-attributes]"],
+  "automatic": {
+    "ipaddress": "192.168.33.32",
+    "hostname": "snowman",
+    "fqdn": "snowman.playground.local",
+    "os": "linux",
+    "os_version": "3.13.0-24-generic",
+    "platform": "ubuntu",
+    "platform_version": "14.04",
+    "platform_family": "debian",
+    "recipes": ["apache", "motd", "motd-attributes"]
+} }
+

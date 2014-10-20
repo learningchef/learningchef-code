@@ -9,8 +9,7 @@
   "override_attributes": {
     "apache": {
       "port": 8080
-    },
-    "motd": {
+    }, "motd": {
       "message": "Developers, developers, developers!"
     }
   }

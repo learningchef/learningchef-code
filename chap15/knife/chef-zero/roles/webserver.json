@@ -6,9 +6,8 @@
   "default_attributes": {
     "apache": {
       "port": 80
-    }
-  },
+} },
   "run_list": [
     "recipe[apache]"
-  ]
+]
 }

@@ -1,3 +1,3 @@
 default['apache']['document_root'] = '/var/www/html'
-default['apache']['port'] = 80
+default['apache']['port'] = 3333
 default['motd']['message'] = 'Default message'
