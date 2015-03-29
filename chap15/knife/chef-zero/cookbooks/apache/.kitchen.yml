@@ -5,7 +5,7 @@ driver:
 provisioner:
   name: chef_zero
   environments_path: ../../environments
-  roles_path: ../../.roles
+  roles_path: ../../roles
 
 platforms:
   - name: centos65
@@ -22,7 +22,7 @@ suites:
       network:
       - ["private_network", {ip: "192.168.33.15"}]
     run_list:
-      - recipe[apache::default]
+      - role[webserver]
     attributes:
 
   - name: dev
